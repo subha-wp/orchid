@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "images": [
+      {
+        "url": "https://gist.github.com/user-attachments/assets/c81edf6a-ca80-4380-9ab9-e1fcd9267bdd",
+        "alt": "Elegant wedding reception setup"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Beautiful banquet hall interior"
+      },
+      {
+        "url": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Decorated event venue"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Outdoor garden banquet area"
+      }
+    ],
+    "title": "Welcome to",
+    "subtitle": "Orchid Garden & Banquet",
+    "description": "A Premium Event Venue in Dakshin Barasat",
+    "tagline": "Where every celebration becomes memorable."
+  },
+  "gallery": {
+    "images": [
+      {
+        "url": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Decor",
+        "alt": "Elegant wedding decoration"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Hall Interior",
+        "alt": "Banquet hall interior view"
+      },
+      {
+        "url": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Stage",
+        "alt": "Stage setup with lighting"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Hall Exterior",
+        "alt": "Outdoor garden area"
+      },
+      {
+        "url": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Lighting",
+        "alt": "Beautiful lighting arrangement"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Catering",
+        "alt": "Food and catering setup"
+      },
+      {
+        "url": "https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Decor",
+        "alt": "Table decoration detail"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "category": "Hall Interior",
+        "alt": "Hall setup for corporate event"
+      }
+    ]
+  },
+  "services": [
+    {
+      "icon": "Heart",
+      "title": "Weddings",
+      "description": "Create magical moments on your special day",
+      "image": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "icon": "Users",
+      "title": "Receptions",
+      "description": "Elegant settings for grand celebrations",
+      "image": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "icon": "Gift",
+      "title": "Anniversary Celebrations",
+      "description": "Honor milestones with style and grace",
+      "image": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "icon": "Cake",
+      "title": "Birthday Parties",
+      "description": "Make every birthday unforgettable",
+      "image": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "icon": "Briefcase",
+      "title": "Corporate Meetings & Events",
+      "description": "Professional spaces for business success",
+      "image": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "icon": "Home",
+      "title": "Family Gatherings",
+      "description": "Warm and welcoming spaces for family",
+      "image": "https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "facilities": [
+    "Large and beautifully designed banquet hall",
+    "Modern lighting & sound system",
+    "AC / Non-AC options",
+    "Spacious parking area",
+    "Clean & well-maintained washrooms",
+    "Stage & backdrop setup",
+    "Photography-friendly ambience",
+    "24×7 power & water supply"
+  ]
+}
