@@ -1,5 +1,6 @@
 'use client';
 import { Heart, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
@@ -15,17 +16,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="text-orchid-400">
-                <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C10.9 2 10 2.9 10 4C10 4.7 10.4 5.4 11 5.7V7C11 7.6 11.4 8 12 8C12.6 8 13 7.6 13 7V5.7C13.6 5.4 14 4.7 14 4C14 2.9 13.1 2 12 2M12 9C9.2 9 7 11.2 7 14C7 15.9 8.2 17.5 9.8 18.3L9 22H11L11.5 19H12.5L13 22H15L14.2 18.3C15.8 17.5 17 15.9 17 14C17 11.2 14.8 9 12 9M12 11C13.7 11 15 12.3 15 14C15 15.7 13.7 17 12 17C10.3 17 9 15.7 9 14C9 12.3 10.3 11 12 11Z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-playfair font-bold">
-                  Orchid Garden & Banquet
-                </h3>
-                <p className="text-sm text-gold-400">Premium Event Venue</p>
-              </div>
+               <Image src="/orchid.jpeg" alt="Orchid Garden & Banquet" width={90} height={70} />
             </div>
             <p className="text-gray-400 font-inter leading-relaxed">
               Creating unforgettable memories for every celebration in Dakshin Barasat.
@@ -122,13 +113,13 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-4">
               <p className="text-gray-400 font-inter text-sm flex items-center">
-                Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> for memorable celebrations
+                Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> 
               </p>
               <a
-                href="/admin/login"
+                href="https://www.codvix.in/"
                 className="text-gray-500 hover:text-gray-400 font-inter text-xs transition-colors"
               >
-                Admin
+                codvix
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { LogOut, Plus, Trash2, Save } from 'lucide-react';
+import { LogOut, Plus, Trash2, Save, Lock } from 'lucide-react';
 import type { ContentData, HeroImage, GalleryImage, Service } from '@/lib/data';
 
 export default function AdminDashboard() {
@@ -182,13 +182,22 @@ export default function AdminDashboard() {
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-playfair font-bold text-gray-800">Admin Panel</h1>
-          <button
-            onClick={handleLogout}
-            className="flex items-center space-x-2 text-red-600 hover:text-red-700 font-inter font-medium"
-          >
-            <LogOut className="w-5 h-5" />
-            <span>Logout</span>
-          </button>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => router.push('/admin/change-password')}
+              className="flex items-center space-x-2 text-gray-700 hover:text-orchid-700 font-inter font-medium"
+            >
+              <Lock className="w-5 h-5" />
+              <span>Change Password</span>
+            </button>
+            <button
+              onClick={handleLogout}
+              className="flex items-center space-x-2 text-red-600 hover:text-red-700 font-inter font-medium"
+            >
+              <LogOut className="w-5 h-5" />
+              <span>Logout</span>
+            </button>
+          </div>
         </div>
       </header>
 
