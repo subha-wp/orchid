@@ -6,11 +6,11 @@
         "alt": "Elegant wedding reception setup"
       },
       {
-        "url": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "url": "https://gist.github.com/user-attachments/assets/be257bb0-e012-4ca9-a54a-ca286c5db219",
         "alt": "Beautiful banquet hall interior"
       },
       {
-        "url": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "url": "https://gist.github.com/user-attachments/assets/d10d5a5f-d123-4b3e-bc39-a35ceb38f438",
         "alt": "Decorated event venue"
       },
       {
@@ -26,42 +26,42 @@
   "gallery": {
     "images": [
       {
-        "url": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/a2a846f8-8259-4f6e-8078-6667340af01c",
         "category": "Decor",
         "alt": "Elegant wedding decoration"
       },
       {
-        "url": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/d7ecf52d-cf3d-4092-86a7-d72939e1c33f",
         "category": "Hall Interior",
         "alt": "Banquet hall interior view"
       },
       {
-        "url": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/bcbf8b65-e258-4025-9343-2f11a0eb67b7",
         "category": "Stage",
         "alt": "Stage setup with lighting"
       },
       {
-        "url": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/744082a5-5026-44a3-bb74-7c7466030ae2",
         "category": "Hall Exterior",
         "alt": "Outdoor garden area"
       },
       {
-        "url": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/bc147f25-01ac-41eb-b5ca-e4c055171c2d",
         "category": "Lighting",
         "alt": "Beautiful lighting arrangement"
       },
       {
-        "url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/8e180840-ec9f-4ee6-92d5-28be16a17dc8",
         "category": "Catering",
         "alt": "Food and catering setup"
       },
       {
-        "url": "https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/ba4d1de9-597d-4ad7-8711-9aadc0973a33",
         "category": "Decor",
         "alt": "Table decoration detail"
       },
       {
-        "url": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "url": "https://gist.github.com/user-attachments/assets/c81edf6a-ca80-4380-9ab9-e1fcd9267bdd",
         "category": "Hall Interior",
         "alt": "Hall setup for corporate event"
       }
@@ -72,13 +72,13 @@
       "icon": "Heart",
       "title": "Weddings",
       "description": "Create magical moments on your special day",
-      "image": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": "https://cdn.pixabay.com/photo/2022/06/12/15/59/wedding-7258300_1280.jpg"
     },
     {
       "icon": "Users",
       "title": "Receptions",
       "description": "Elegant settings for grand celebrations",
-      "image": "https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": "https://i.pinimg.com/736x/c6/02/14/c602146b2b050f7e1db7662129c83550.jpg"
     },
     {
       "icon": "Gift",
@@ -90,7 +90,7 @@
       "icon": "Cake",
       "title": "Birthday Parties",
       "description": "Make every birthday unforgettable",
-      "image": "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": "https://5.imimg.com/data5/ANDROID/Default/2022/7/EP/BH/KD/7997323/product-jpeg-500x500.jpg"
     },
     {
       "icon": "Briefcase",
@@ -102,7 +102,7 @@
       "icon": "Home",
       "title": "Family Gatherings",
       "description": "Warm and welcoming spaces for family",
-      "image": "https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": "https://www.shutterstock.com/shutterstock/videos/1104284215/thumb/9.jpg?ip=x480"
     }
   ],
   "facilities": [
