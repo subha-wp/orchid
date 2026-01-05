@@ -1,48 +1,17 @@
 'use client';
-import { useState } from 'react';
-import { Phone, Mail, Send, User, Calendar, Users as UsersIcon, MessageSquare } from 'lucide-react';
+import { Phone, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    eventType: '',
-    date: '',
-    guests: '',
-    message: ''
-  });
+  // WhatsApp phone numbers (without + and spaces)
+  const whatsappNumber1 = '919679042015';
+  const whatsappNumber2 = '917001937559';
+  
+  // Pre-filled message for WhatsApp
+  const whatsappMessage = encodeURIComponent('Hello! I would like to make a booking enquiry.');
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage('');
-
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setSubmitMessage('Thank you for your enquiry! We will contact you shortly.');
-    setFormData({
-      name: '',
-      phone: '',
-      eventType: '',
-      date: '',
-      guests: '',
-      message: ''
-    });
-    setIsSubmitting(false);
-
-    setTimeout(() => {
-      setSubmitMessage('');
-    }, 5000);
+  const openWhatsApp = (phoneNumber: string) => {
+    const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    window.open(url, '_blank');
   };
 
   return (
@@ -117,131 +86,36 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-orchid-50 to-white p-8 rounded-2xl shadow-xl border border-orchid-100">
-            <h3 className="text-2xl font-playfair font-bold text-gray-800 mb-6">
-              Booking Enquiry Form
-            </h3>
-
-            {submitMessage && (
-              <div className="mb-6 bg-green-50 border border-green-200 text-green-800 p-4 rounded-lg font-inter">
-                {submitMessage}
-              </div>
-            )}
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <User className="inline w-4 h-4 mr-2" />
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter"
-                  placeholder="Your full name"
-                />
+          <div className="bg-gradient-to-br from-orchid-50 to-white p-8 rounded-2xl shadow-xl border border-orchid-100 flex items-center justify-center">
+            <div className="text-center w-full">
+              <div className="mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <MessageCircle className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-3xl font-playfair font-bold text-gray-800 mb-4">
+                  Chat with Us on WhatsApp
+                </h3>
+                <p className="text-gray-600 font-inter mb-8">
+                  Click the button below to start a conversation with us on WhatsApp. We're here to help with your booking enquiries!
+                </p>
               </div>
 
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <Phone className="inline w-4 h-4 mr-2" />
-                  Phone *
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter"
-                  placeholder="Your contact number"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <Mail className="inline w-4 h-4 mr-2" />
-                  Event Type *
-                </label>
-                <select
-                  name="eventType"
-                  value={formData.eventType}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter"
+              <div className="space-y-4">
+                <button
+                  onClick={() => openWhatsApp(whatsappNumber1)}
+                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-8 rounded-lg font-inter font-semibold text-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
                 >
-                  <option value="">Select event type</option>
-                  <option value="wedding">Wedding</option>
-                  <option value="reception">Reception</option>
-                  <option value="anniversary">Anniversary</option>
-                  <option value="birthday">Birthday Party</option>
-                  <option value="corporate">Corporate Event</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.375a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  </svg>
+                  <span>Chat on WhatsApp</span>
+                </button>
 
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <Calendar className="inline w-4 h-4 mr-2" />
-                  Event Date
-                </label>
-                <input
-                  type="date"
-                  name="date"
-                  value={formData.date}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter"
-                />
+                <p className="text-sm text-gray-500 font-inter mt-4">
+                  Or contact us directly at +91 96790 42015
+                </p>
               </div>
-
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <UsersIcon className="inline w-4 h-4 mr-2" />
-                  Number of Guests
-                </label>
-                <input
-                  type="number"
-                  name="guests"
-                  value={formData.guests}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter"
-                  placeholder="Estimated guest count"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-inter font-medium mb-2">
-                  <MessageSquare className="inline w-4 h-4 mr-2" />
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-3 border border-orchid-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid-500 font-inter resize-none"
-                  placeholder="Any special requirements or questions?"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-orchid-600 to-orchid-700 text-white py-4 rounded-lg font-inter font-semibold hover:from-orchid-700 hover:to-orchid-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (
-                  <span>Sending...</span>
-                ) : (
-                  <>
-                    <span>Send Enquiry</span>
-                    <Send className="w-5 h-5" />
-                  </>
-                )}
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
