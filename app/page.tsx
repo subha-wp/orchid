@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Location from "@/components/Location";
+import Payment from "@/components/Payment";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
@@ -25,6 +26,7 @@ export default function Home() {
       <Facilities />
       <Gallery />
       <Location />
+      <Payment />
       <Contact />
 
       <Footer />
